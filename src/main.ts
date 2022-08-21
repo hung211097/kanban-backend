@@ -12,8 +12,8 @@ async function bootstrap() {
   app.enableCors({ origin: '*' });
   if (config.NODE_ENV !== ENVS.PROD) {
     const builder = new DocumentBuilder()
-      .setTitle('Fullerton API')
-      .setDescription('Fullerton API description')
+      .setTitle('Kanban Board API')
+      .setDescription('Kanban Board API description')
       .setVersion('1.0')
       .addBearerAuth()
       .build();
